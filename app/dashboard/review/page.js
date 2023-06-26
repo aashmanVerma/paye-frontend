@@ -15,7 +15,7 @@ export default function page() {
   const [pop, setPop] = useState(false);
 
   useEffect(()=>{
-    axios.get("https://paye.onrender.com/fetch", {
+    axios.get("https://paye.onrender.com/emp/fetch", {
       params : {
         token : Cookies.get("paye-token")
       }

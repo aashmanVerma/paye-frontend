@@ -105,7 +105,7 @@ export default function page() {
                         <span className="mt-4 block font-medium">Description -</span>
                         <span className="my-1 block">{e.description+"..."}</span>
                         <div className="px-2 py-1 rounded my-2 bg-red-700 text-center cursor-pointer" onClick={async()=>{
-                            await axios.post("https://paye.onrender.com/del",{
+                            await axios.post("https://paye.onrender.com/form/del",{
                                 token : Cookies.get("paye-token"),
                                 formid : e._id
                             })
